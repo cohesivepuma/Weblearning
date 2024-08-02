@@ -24,6 +24,9 @@ document.querySelector('.check').addEventListener('click',function(){
         document.querySelector('.score').textContent = score;
     }else if(guess === secretNumber){
         document.querySelector('.message').textContent = 'Great!You got it!';
+        document.querySelector('body').style.backgroundColor = 'green';
+        document.querySelector('.number').style.width = '30rem';
+        
     }else if(guess <= secretNumber){
         if(score>1){
             document.querySelector('.message').textContent = 'Too Low!';
