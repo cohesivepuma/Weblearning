@@ -1,0 +1,16 @@
+h3 {
+    color: red;
+}
+/* 元素选择器 */
+
+.cla {
+    color: aqua;
+}
+/* 类选择器 */
+
+#tag {
+    color: blueviolet;
+}
+/* id选择器 */
+
+/* 选择器的优先级从上往下依次增强 */

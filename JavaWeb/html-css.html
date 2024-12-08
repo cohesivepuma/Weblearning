@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="html-css.css">
+    <!-- 外嵌css样式，在外部创建一个css文件，后作为引用 -->
+    <style>
+        h2 {
+            color: yellow;
+        }
+    </style>
+    <!-- 内嵌style样式，对当前全文有效,虽然在哪声明都一样，但还是推荐在头部声明 -->
+</head>
+<body>
+    <h1 style="color: blue;">你看我像不像红色</h1>
+    <!-- 行内style格式，仅仅对该行内有效 -->
+    <h2>你看我像不像绿色</h2>
+    <h3>你看我像不像黑色</h3>
+    <p style="color: #5982af;">这是啥颜色</p>
+    <!-- 这是十六进制颜色表示法 -->
+    <p style="color: rgb(232, 134, 117);">这是啥颜色</p>
+    <!-- 这是rgb颜色表示法，可以使用取色工具取色 -->
+    <span class="cla">这是一个行内元素</span><span id="tag">This is an inline element too</span>
+</body>
+</html>
