@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 65%;
+            height: 200px;
+            box-sizing: border-box;
+            background-color: aquamarine;
+
+            padding: 20px;
+            /* padding算是内容与border之间的间隔，它的背景色和内容是一样的 */
+            border: 10px solid red;
+            /* border算是对内容的包装，处于内容的外面，充当外边框的作用。感觉在搞阴影的时候应该会有用吧 */
+            margin: 0 auto;
+            /* （CPB）content+padding+border = width * height */
+            /* margin算是在不同元素之间的间隔与空隙 */
+            /* 0 auto 代表浏览器自动计算外边距，刚刚所说的里面三部分其实都是有CPB组成的，所以剩下的都是margin。
+            明确了CPB，margin也自然可以通过计算机计算出来了 */
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        A A A A A A A A A A A A A A A A 
+    </div>
+</body>
+</html>

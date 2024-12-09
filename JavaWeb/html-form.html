@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+        用户名：<input type="text" name="username">
+        年龄：<input type="text" name="age">
+
+        <input type="submit" value="提交">
+    </form>
+    <!-- 
+    action为表单提交的URL
+    method为表单提交的方式，分为
+        get：（默认）提交会在url后面接上表单的数据：?username=111&password=111，url有限制长度
+        post： 在消息体（请求体）中传递，长度无限制。
+
+    type时input的类型
+    name时表单提交时的属性，必须要加。
+    value是用户看到的按钮上的值
+        -->
+<form action="">
+    <label><input type="radio" name="gender" id="1">man</label>
+    <label><input type="radio" name="gender" id="2">woman</label><br><br>
+<!-- radio是单选类型，相同的单选的选项必须要用同一个name，选项的值用value代替。
+    label时表单元素，可以讲选项和文字包裹起来，当你在选取文字时也可以讲选项勾选。 -->
+    <label><input type="checkbox" name="hobby" id="3">sing</label>
+    <label><input type="checkbox" name="hobby" id="4">jump</label>
+    <label><input type="checkbox" name="hobby" id="5">rap</label><br><br>
+
+    图像：<input type="file" name="image"><br><br>
+    生日：<input type="date" name="birthday"><br><br>
+    日期时间：<input type="datetime-local" name="datetime"><br><br>
+    邮箱：<input type="email" name="email">
+    年龄：<input type="number" name="age"><br><br>
+    请选择你的英雄: <select name="hero">
+        <option value="">----请选择----</option>
+        <option value="1">牢布</option>
+        <option value="2">牢震</option>
+        <option value="1">牢戬</option>
+        <option value="1">牢元</option>
+    </select><br><br>
+    <textarea name="description" cols="30" rows="10"></textarea> <br><br>
+        <!-- cols一行能输入多少个，rows能输入多少行 -->
+    <input type="button" value="按钮">
+    <input type="reset" value="重置">
+    <input type="submit" value="提交">
+</form>    
+
+</body>
+</html>
